@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .hero {
+            background-image: url('./Assets/COVID19.jpg');
+            background-size: cover;
+        }
+
+        .homepageBody {
+            background-color: white;
+        }
+
+        .iframe.streetSmarts {
+            width: 90%;
+            height: 100%;
+        }
+        .videos {
+            width: 90%;
+            height: 75%;
+        }
+
+    </style>
+    <title>CO-VIRAL Home</title>
+</head>
+
+
+<body>
+    <section>
+        <section class="hero is-info is-medium">
+
+            <!-- Hero content: will be in the middle -->
+            <div class="hero-body has-text-right has-text-white">
+                <div class="container">
+                    <h1 class="title has-text-white is-size-1">
+                        CO-VIRAL
+                    </h1>
+                    <h2 class="subtitle has-text-white is-size-4">
+                        Your One Stop App for Everything COVID-19
+                    </h2>
+                    <a href='./index.html' type="button" class="button is-info is-light is-medium"><b>HOME</b></a>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <br>
+
+    <section class="homepageBody">
+    <div class="tile is-ancestor">
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <p class="title">CDC</p>
+                <p class="subtitle" id="homeTitleCdc"> <a href="" target="_blank" id="cdcLink">TOP HEADLINE</a></p>
+                <div class="content">
+                    <p id="homeSummaryCdc">Article snippet.</p>
+                    <a href='https://www.cdc.gov/coronavirus/2019-ncov/index.html' type="button"
+                        class="button is-primary is-light is-medium"><b>Go to CDC.gov</b></a>
+                </div>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <p class="title">WHO</p>
+                <p class="subtitle" id="homeTitleWho"> <a href="" target="_blank" id="whoLink">TOP HEADLINE</a></p>
+                <div class="content">
+                    <p id="homeSummaryWho">Article snippet.</p>
+                    <a href='https://www.who.int/health-topics/coronavirus#tab=tab_1' type="button"
+                        class="button is-primary is-light is-medium"><b>Go to WHO.int</b></a>
+                </div>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <p class="title">NIH</p>
+                <p class="subtitle" id="homeTitleNih"> <a href="" target="_blank" id="nihLink">TOP HEADLINE</a></p>
+                <div class="content">
+                    <p id="homeSummaryNih">Article snippet.</p>
+                    <a href='https://www.nih.gov/health-information/coronavirus' type="button"
+                        class="button is-primary is-light is-medium"><b>Go to NIH.gov</b></a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+            <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <article class="tile is-child box">
+                        <p class="title">TOP ARTICLES</p>
+                        <p class="subtitle">Scroll through archived news articles for more information</p>
+                        <a href='./news.html' type="button" class="button is-primary is-light is-medium"><b>TOP ARTICLES</b></a>
+                    </article>
+                    <article class="tile is-child box">
+                        <p class="title">CURRENT DATA</p>
+                        <p class="subtitle">Track the most up-to-date national and international data</p>
+                        <a href='./currentData.html' type="button" class="button is-primary is-light is-medium"><b>CURRENT DATA</b></a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">STREET SMARTS</p>
+                        <p class="subtitle">QUICK FACTS RE COVID-19</p>
+                        <hr>
+                        <div class="content">
+                            <p><b>CDC</b></p>
+
+                            <iframe class="streetSmarts" src="https://www.cdc.gov/coronavirus/2019-ncov/faq.html" name="CDC FAQ"></iframe><a
+                                href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html" target="CDC FAQ"></a>
+                            <br>
+                            <hr>
+                            <p><b>JOHNS HOPKINS</b></p>
+                            <iframe class="streetSmarts" src="https://coronavirus.jhu.edu/" name="Johns Hopkins"></iframe><a
+                                href="https://coronavirus.jhu.edu/" target="Johns Hopkins"></a>
+                            <br>
+                            <a href='whatyouneedtoknow.html' type="button" class="button is-primary is-light is-medium"><b>What you need to
+                                    know</b></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">CO-VIRAL</p>
+                    <p class="subtitle">ABOUT OUR TEAM</p>
+                    <div class="content">
+                        <p>If you do not have a science or medical background and feel overwhelmed or confused
+                            amid the recent COVID-19 outbreak, then our app is for you. We bring you only the
+                            most accurate information from only the most verifiable sources, including the CDC,
+                            the World Health Organization, and the NIH. Our app will keep you up-to-date
+                            regarding what you need to know and when.</p>
+                        <p>Navigating through our app you will find: a page containing the most current
+                            information released from the CDC, WHO, and NIH. Search by country to find the current data regarding
+                            case numbers, death rates, and number of recovered patients. Review the data so you can make the most
+                            informed decisions for yourself and
+                            family. Watch the videos posted to
+                            learn more about the virus itself or enjoy the displayed memes on our homepage to boost your spirit.
+                            Remember: none of us are alone in this and the best
+                            course of action is not to panic!</p>
+                        <p>With that being said, we also have links for you to check out that contain more
+                            information about this novel coronavirus and COVID-19--the disease it causes. We
+                            hope our app helps mitigate any confusion with respect to COVID-19 so you can enjoy
+                            more time with family and friends (socially distanced of course) and less time
+                            sorting through the flood of often inaccurate information published by the thousands
+                            of international and national media outlets.</p>
+                        <p>CO-VIRAL and chill. Remember, we can only "defeat" COVID-19 by collaborating and
+                            cooperating with eachother. Our app is your starting point and one-stop guide to
+                            everything COVID-19.</p>
+                        <br>
+                        <a href='./whatyouneedtoknow.html' type="button" class="button is-primary is-light is-medium"><b>FACTS</b></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <div class="content">
+                    <p class="title">VIRAL MEMES</p>
+                    <p class="subtitle">A DOSE OF MEMES TO BRIGHTEN YOUR DAY</p>
+                    <figure class="image is-4by3 meme">
+                    </figure>
+                    <img src="./Assets/tenorLogo.png" alt="Tenor logo" style="width:100px;height:25px" />
+                    <hr>
+                    <p>
+                        "The why of humor has long been a mystery. For ancient Greek philosophers such as Plato and Aristotle, it was a
+                        dangerous phenomenon, something that had the potential to undermine authority and the good order of society.
+                        Laughing at those in charge was a serious issue then (and still remains the case in more autocratic parts of the
+                        world). Today, in democratic societies, we know the importance of mocking those with power, and we celebrate it, on
+                        Saturday Night Live in the United States and Have I Got News for You in Britain...How’s that for an LOL. We joke
+                        because if we didn’t, we’d cry...We laugh, then, to take back control and to connect—two things we have lost in our fight against the coronavirus. Not
+                        only are we unable to stop the tidal wave of infection washing over us, but we are being forced to endure this reality
+                        alone in our own home. Powerless and isolated, we’re finding that the joke is now our most reliable shield—and our
+                        warmest comfort blanket." <p><i><small>- The Atlantic</small></i></p>
+                    </p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="tile is-ancestor">
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <p class="title">CHECK OUT WHAT THE CDC, NIH, WHO, AND LEADING MEDICAL EXPERTS, INCLUDING JOHNS HOPKINS, HAVE BEEN
+                    SAYING</p>
+                <p class="subtitle">Your update straight from leading medical experts</p>
+                <div class="content">
+                    <p>A closer look at the virion that causes COVID-19</p>
+                    <iframe class="videos" src="https://www.youtube.com/embed/sHP0UIdZyI4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+        </div>
+        <div class="tile is-parent is-8">
+            <article class="tile is-child box">
+                <p class="title">VIDEO: COVID-19</p>
+                <p class="subtitle">CORONAVIRUSES</p>
+                <div class="content">
+                    <p>What is a coronavirus? Why is it named COVID-19? What you need to know from the CDC</p>
+                </div>
+                <iframe class="videos" src="https://www.youtube.com/embed/5DGwOJXSxqg" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>CO-VIRAL</strong> by <a href="">Lee Ann Norman, Miguel Mejares, Robyn Palmer, and Michael Sanderson
+                </a>
+                <p>© 2020</p>
+                <p>UT AUSTIN WEB DEVELOPMENT FULL-STACK BOOTCAMP</p>
+            </p>
+        </div>
+    </footer>
+</section>
+<script src="NewsAPI.js"></script>
+<script src="meme.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's News</title>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bulma links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .hero {
+            background-image: url('./Assets/COVID19.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container is-fluid"> -->
+    <section class="hero is-medium has-bg-img has-text-white">
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body has-text-right has-text-white">
+            <div class="container">
+                <h1 class="title has-text-white is-size-1">
+                    CO-VIRAL
+                </h1>
+                <h2 class="subtitle has-text-white is-size-4">
+                    Your One Stop App for Everything COVID-19
+                </h2>
+                <a href='./index.html' type="button" class="button is-info is-light is-medium"><b>HOME</b></a>
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Top News Stories
+            </h1>
+            <p class="subtitle">
+                Read the latest developments directly from verified sources like the CDC, WHO and NIH
+            </p>
+
+            <br>
+            <div class="columns">
+            <!-- CDC data card -->
+                <div class="card column is-4" style="margin-right: 10px;">
+                    <button class="button is-primary" id="leftCdc"><i class="fas fa-chevron-left"></i></button>
+                    <button class="button is-primary" id="rightCdc" style="float: right;"><i
+                            class="fas fa-chevron-right"></i></button>
+                    <div class="card-image">
+                        <figure class="image is-3by1">
+                            <img id="cdcImg" src="https://bulma.io/images/placeholders/480x480.png"
+                                alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7UlwCjZ9zO4Uu6IUqYUsRtM4xhaValHLkd7XbiWdrEIQal2cp&usqp=CAU"
+                                        alt="CDC logo">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4" id="cdcTitle">Title</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p1 id="cdcText">Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. </p1>
+                            <br>
+                            <a id="cdcLink" href="#" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <!-- WHO data card -->
+                <div class="card column is-4" style="margin-right: 10px;">
+                    <button class="button is-primary" id="leftWho"><i class="fas fa-chevron-left"></i></button>
+                    <button class="button is-primary" id="rightWho" style="float: right;"><i
+                            class="fas fa-chevron-right"></i></button>
+                    <div class="card-image">
+                        <figure class="image is-3by1">
+                            <img id="whoImg" src="https://bulma.io/images/placeholders/480x480.png"
+                                alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNb1ZWnZKyqBHyanKqEtgl9EA7b0zjYXF1NWCXVeMOZg2fwrb4&usqp=CAU"
+                                        alt="WHO logo">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4" id="whoTitle">Title</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p1 id="whoText">Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris.</p1>
+                            <br>
+                            <a id="whoLink" href="#" target="_blank"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <!-- NIH data card -->
+                <div class="card column is-4">
+                    <button class="button is-primary" id="leftNih"><i class="fas fa-chevron-left"></i></button>
+                    <button class="button is-primary" id="rightNih" style="float: right;"><i
+                            class="fas fa-chevron-right"></i></button>
+                    <div class="card-image">
+                        <figure class="image is-3by1">
+                            <img id="nihImg" src="https://bulma.io/images/placeholders/480x480.png"
+                                alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQg1DI9bEc66ERfaUBVSdTDsG8C5AD1megdtG1R_A1EAdCVAkot&usqp=CAU"
+                                        alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4" id="nihTitle">Title</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p1 id="nihText">Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris.</p1>
+                            <br>
+                            <a id="nihLink" href="#" target="_blank"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>CO-VIRAL</strong> by <a href="">Lee Ann Norman, Miguel Mejares, Robyn Palmer, and Michael
+                    Sanderson </a>
+                <p>© 2020</p>
+                <p>UT AUSTIN WEB DEVELOPMENT FULL-STACK BOOTCAMP</p>
+            </p>
+        </div>
+    </footer>
+    </div>
+    </footer>
+    <script src="NewsAPI.js"></script>
+</body>
+
+</html>
